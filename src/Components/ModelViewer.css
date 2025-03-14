@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(6, 56, 56);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .canvas-wrapper {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  .selection-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .texture-options,
+  .color-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .texture-button,
+  .color-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: transform 0.2s ease;
+  }
+  
+  .texture-button {
+    background-size: cover;
+  }
+  
+  .color-button:hover,
+  .texture-button:hover {
+    transform: scale(1.1);
+    border-color: #3498db;
+  }
+  
